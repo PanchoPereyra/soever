@@ -25,11 +25,14 @@ function Hero() {
                     <div className="flex flex-col justify-center items-start gap-6 order-last md:order-first w-full">
 
                         <div className="w-full space-y-4">
-                            <h2 className="text-xl md:text-2xl font-black text-gray-950 uppercase tracking-tight text-center md:text-left">
-                                ¡Cada vez falta menos para elegir nuestro futuro!
+                            <h2 className="text-xl md:text-2xl font-black text-yellow-500 uppercase tracking-tight text-center md:text-left">
+                                Ver que ponemos aca, si texto, imagen o ambas
                             </h2>
-                            <p className="font-medium text-gray-700 text-sm md:text-base text-center md:text-left">
+                            {/* <p className="font-red text-xl md:text-base text-center md:text-left tracking-wide [-webkit-text-stroke:1px_#facc15] text-transparent">
                                 Este viernes 12 de junio, las y los trabajadores tenemos una cita importante con la democracia sindical. Es tiempo de participar y hacer oír nuestra voz.
+                            </p> */}
+                            <p className="font-medium text-gray-500 text-sm md:text-base text-center md:text-left">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptates commodi facilis accusamus dolor debitis, ex fuga architecto laborum quidem corporis eaque placeat, animi quibusdam rem sit odio? Iure, impedit!
                             </p>
                         </div>
                     </div>

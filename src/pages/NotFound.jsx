@@ -6,7 +6,7 @@ function NotFound() {
 return (
         <div className="flex flex-col items-center justify-center h-[70vh] text-center p-6">
             
-            <h1 className="text-5xl font-bold text-orange-600 mb-4">
+            <h1 className="text-5xl font-bold text-yellow-500 mb-4">
                 404
             </h1>
 
@@ -14,13 +14,13 @@ return (
                 Página no encontrada
             </h2>
 
-            <p className="text-gray-600 max-w-md mb-6">
+            <p className="text-gray-300 max-w-md mb-6">
                 Lo sentimos, la página que estás buscando no existe o fue movida.
             </p>
 
             <a 
                 href="/"
-                className="px-6 py-2 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-600 transition"
+                className="px-6 py-2 bg-yellow-500 text-black rounded-lg shadow hover:bg-black hover:text-yellow-300 border border-amber-500 transition"
             >
                 Volver al inicio
             </a>

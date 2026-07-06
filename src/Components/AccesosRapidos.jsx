@@ -1,86 +1,86 @@
 import React from 'react';
 import { 
-  Cylinder, 
-  CheckCircle2, 
-  Megaphone, 
-  Building2, 
   Users, 
-  HardHat, 
-  TreePine, 
-  ShieldAlert, 
-  Route 
+  Newspaper, 
+  Gift, 
+  FileSpreadsheet, 
+  UserPlus, 
+  Palmtree, 
+  Tent, 
+  FileText, 
+  Phone 
 } from 'lucide-react';
 
 export default function AccesosRapidos() {
   // Ajustamos el borde amarillo sutil por defecto (border-yellow-500/30) para calcar tu foto
   const tarjetaEstilo = "group flex flex-col items-center justify-center text-center p-6 rounded-xl border border-yellow-500/30 bg-neutral-950/40 transition-all duration-200 hover:bg-yellow-500 hover:border-yellow-500 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(250,204,21,0.15)]";
   const iconoEstilo = "w-10 h-10 text-yellow-500 group-hover:text-black transition-colors duration-200 shrink-0";
-  const textoEstilo = "mt-4 text-xs font-black uppercase tracking-wider text-neutral-300 group-hover:text-black transition-colors duration-200 leading-tight";
+  const textoEstilo = "mt-4 text-xs font-black uppercase tracking-wider text-gray-500 group-hover:text-black transition-colors duration-200 leading-tight";
 
   return (
     <section className="bg-black py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto"> {/* Achicamos la vista un pelín para que los bloques queden más armónicos */}
+      <div className="max-w-5xl mx-auto">
         
         {/* Título de la sección en Amarillo Vial */}
         <h2 className="text-2xl md:text-3xl font-black text-yellow-500 uppercase tracking-tight mb-10 text-center md:text-left">
           ACCESOS RÁPIDOS
         </h2>
 
-        {/* 🛠️ CAMBIO CLAVE AQUÍ: grid-cols-1 en celu y md:grid-cols-3 fijo en compu para hacer 3x3 */}
+        {/* La grilla de 3x3 perfectamente alineada */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           
-          {/* Tarjeta 1: Avance de Obra */}
-          <a href="#" className={tarjetaEstilo}>
-            <Cylinder className={iconoEstilo} strokeWidth={1.5} />
-            <span className={textoEstilo}>Avance de Obra</span>
-          </a>
-
-          {/* Tarjeta 2: Obras Finalizadas */}
-          <a href="#" className={tarjetaEstilo}>
-            <CheckCircle2 className={iconoEstilo} strokeWidth={1.5} />
-            <span className={textoEstilo}>Obras Finalizadas</span>
-          </a>
-
-          {/* Tarjeta 3: Interés General */}
-          <a href="#" className={tarjetaEstilo}>
-            <Megaphone className={iconoEstilo} strokeWidth={1.5} />
-            <span className={textoEstilo}>Interés General</span>
-          </a>
-
-          {/* Tarjeta 4: Institucional */}
-          <a href="#" className={tarjetaEstilo}>
-            <Building2 className={iconoEstilo} strokeWidth={1.5} />
-            <span className={textoEstilo}>Institucional</span>
-          </a>
-
-          {/* Tarjeta 5: Reunión de Trabajo */}
-          <a href="#" className={tarjetaEstilo}>
+          {/* Tarjeta 1: Nosotros */}
+          <a href="/nosotros" className={tarjetaEstilo}>
             <Users className={iconoEstilo} strokeWidth={1.5} />
-            <span className={textoEstilo}>Reunión de Trabajo</span>
+            <span className={textoEstilo}>Nosotros</span>
           </a>
 
-          {/* Tarjeta 6: Conservación */}
-          <a href="#" className={tarjetaEstilo}>
-            <HardHat className={iconoEstilo} strokeWidth={1.5} />
-            <span className={textoEstilo}>Conservación</span>
+          {/* Tarjeta 2: Noticias */}
+          <a href="/noticias" className={tarjetaEstilo}>
+            <Newspaper className={iconoEstilo} strokeWidth={1.5} />
+            <span className={textoEstilo}>Noticias</span>
           </a>
 
-          {/* Tarjeta 7: Estudios Ambientales */}
-          <a href="#" className={tarjetaEstilo}>
-            <TreePine className={iconoEstilo} strokeWidth={1.5} />
-            <span className={textoEstilo}>Estudios Ambientales</span>
+          {/* Tarjeta 3: Beneficios */}
+          <a href="/beneficios" className={tarjetaEstilo}>
+            <Gift className={iconoEstilo} strokeWidth={1.5} />
+            <span className={textoEstilo}>Beneficios</span>
           </a>
 
-          {/* Tarjeta 8: Seguridad Vial */}
-          <a href="#" className={tarjetaEstilo}>
-            <ShieldAlert className={iconoEstilo} strokeWidth={1.5} />
-            <span className={textoEstilo}>Seguridad Vial</span>
+          {/* Tarjeta 4: Escalas */}
+          <a href="/escalas" className={tarjetaEstilo}>
+            <FileSpreadsheet className={iconoEstilo} strokeWidth={1.5} />
+            <span className={textoEstilo}>Escalas</span>
           </a>
 
-          {/* Tarjeta 9: Estado de Rutas */}
-          <a href="#" className={tarjetaEstilo}>
-            <Route className={iconoEstilo} strokeWidth={1.5} />
-            <span className={textoEstilo}>Estado de Rutas</span>
+          {/* Tarjeta 5: Afiliación */}
+          <a href="/afiliacion" className={tarjetaEstilo}>
+            <UserPlus className={iconoEstilo} strokeWidth={1.5} />
+            <span className={textoEstilo}>Afiliación</span>
+          </a>
+
+          {/* Tarjeta 6: Turismo */}
+          <a href="/turismo" className={tarjetaEstilo}>
+            <Palmtree className={iconoEstilo} strokeWidth={1.5} />
+            <span className={textoEstilo}>Turismo</span>
+          </a>
+
+          {/* Tarjeta 7: Camping */}
+          <a href="/camping" className={tarjetaEstilo}>
+            <Tent className={iconoEstilo} strokeWidth={1.5} />
+            <span className={textoEstilo}>Camping</span>
+          </a>
+
+          {/* Tarjeta 8: Documentos */}
+          <a href="/documentos" className={tarjetaEstilo}>
+            <FileText className={iconoEstilo} strokeWidth={1.5} />
+            <span className={textoEstilo}>Documentos</span>
+          </a>
+
+          {/* Tarjeta 9: Contacto */}
+          <a href="/contacto" className={tarjetaEstilo}>
+            <Phone className={iconoEstilo} strokeWidth={1.5} />
+            <span className={textoEstilo}>Contacto</span>
           </a>
 
         </div>
@@ -89,7 +89,6 @@ export default function AccesosRapidos() {
     </section>
   );
 }
-
 
 // import React from 'react';
 // import { 

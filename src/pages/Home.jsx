@@ -1,7 +1,7 @@
 //IMPORT
 import Hero from "../Components/Hero"
 import Lista from "../Components/Lista"
-import Header from "../Components/Header"
+// import Header from "../Components/Header"
 import ProximosEventos from "../Components/ProximosEventos"
 import Noticias from "./Noticias"
 
@@ -14,7 +14,7 @@ function Home() {
             {/* Aca va lo que se muestra en la pantalla "inicio" */}
             <Hero />
             <Lista />
-            <Header />
+            {/* <Header /> */}
             <Noticias/>
             <ProximosEventos/>
         </div>

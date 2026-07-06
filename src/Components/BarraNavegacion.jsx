@@ -3,18 +3,20 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom"; 
 
 function BarraNavegacion() {
-// Clases dinámicas para los enlaces de CELULAR con borde amarillo en hover
-// Enlaces de CELULAR: solo estructura básica, el color lo maneja el index.css
+
 const claseCelular = ({ isActive }) => 
     `py-1.5 px-2 rounded-lg border text-center block w-full transition-all duration-200 font-bold ${
         isActive 
             ? "!bg-yellow-500 !text-black !border-yellow-500 shadow-md" 
-            : "!bg-transparent !text-neutral-400 !border-transparent hover:!bg-yellow-500 hover:!text-black hover:!border-yellow-500"
+            : "!bg-transparent !text-yellow-500 !border-transparent hover:!bg-yellow-500 hover:!text-black hover:!border-yellow-500"
     }`;
-    // Clases dinámicas para los enlaces de COMPUTADORA (Match exacto con la foto)
-    // Clases dinámicas para los enlaces de COMPUTADORA con borde amarillo en hover
-// Enlaces de COMPUTADORA: solo estructura básica
-const clasePC = "px-4 py-2 rounded-xl border border-transparent transition-all duration-200 hover:bg-yellow-500 text-black";
+
+const clasePC = ({ isActive }) => 
+    `px-4 py-2 rounded-xl border text-base font-bold transition-all duration-200 ${
+        isActive 
+            ? "!bg-yellow-500 !text-black !border-yellow-500 shadow-md" 
+            : "!bg-transparent !text-yellow-500 !border-transparent hover:!bg-yellow-500 hover:!text-black hover:!border-yellow-500"
+    }`;
 
     return (
         <header className="bg-black sticky top-0 z-50 border-b border-neutral-800 transition-all">
@@ -31,10 +33,10 @@ const clasePC = "px-4 py-2 rounded-xl border border-transparent transition-all d
                         className="w-12 h-12 object-contain flex-shrink-0"
                     />
                     <div className="flex flex-col justify-center text-left">
-                        <h1 className="text-4xl font-black text-yellow-400 uppercase tracking-tight leading-tight">
+                        <h1 className="text-4xl font-black text-yellow-500 uppercase tracking-tight leading-tight">
                             S.O.E.V.E.R.
                         </h1>
-                        <p className="text-[9px] font-bold text-yellow-400 uppercase tracking-widest">
+                        <p className="text-[9px] font-bold text-yellow-500 uppercase tracking-widest">
                             Sindicato Empleados Viales de Entre Ríos
                         </p>
                     </div>
@@ -44,13 +46,15 @@ const clasePC = "px-4 py-2 rounded-xl border border-transparent transition-all d
                 <div className="bg-black px-2 py-2">
                     <nav className="grid grid-cols-4 gap-1 text-center text-xs font-bold">
                         <NavLink to="/" className={claseCelular}>Inicio</NavLink>
-                        <NavLink to="/noticias" className={claseCelular}>Noticias</NavLink> 
-                        <NavLink to="/eventos" className={claseCelular}>Nosotros</NavLink>
-                        <NavLink to="/jubilados" className={claseCelular}>Beneficios</NavLink>
-                        <NavLink to="/sindicato" className={claseCelular}>Afiliación</NavLink>
-                        <NavLink to="/linksinteres" className={claseCelular}>Documentos</NavLink>
-                        <NavLink to="/zonales" className={claseCelular}>Contacto</NavLink>
-                        {/* <NavLink to="/obrasocial" className={claseCelular}>Obra Social</NavLink> */}
+                        <NavLink to="/nosotros" className={claseCelular}>Nosotros</NavLink>  {/* ya esta */}
+                        <NavLink to="/noticias" className={claseCelular}>Noticias</NavLink>  {/* ya esta */}  
+                        <NavLink to="/beneficios" className={claseCelular}>Beneficios</NavLink>  {/* ya esta */}
+                        <NavLink to="/escala" className={claseCelular}>Escala</NavLink>
+                        <NavLink to="/afiliacion" className={claseCelular}>Afiliación</NavLink>
+                        <NavLink to="/turismo" className={claseCelular}>Turismo</NavLink>
+                        <NavLink to="/camping" className={claseCelular}>Camping</NavLink>
+                        <NavLink to="/documentos" className={claseCelular}>Documentos</NavLink>
+                        <NavLink to="/contacto" className={claseCelular}>Contacto</NavLink>
                     </nav>
                     
                     {/* Botón Lista 1 centrado abajo en el celu */}
@@ -68,39 +72,45 @@ const clasePC = "px-4 py-2 rounded-xl border border-transparent transition-all d
             <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 py-2.5">
                 <div className="flex justify-center items-center">
                     <nav className="flex flex-wrap justify-center items-center gap-x-1 gap-y-2 text-base font-bold">
-                        
-                        
                         <NavLink to="/" className={clasePC}>
                             Inicio
+                        </NavLink>
+
+                        <NavLink to="/nosotros" className={clasePC}>
+                            Nosotros
                         </NavLink>
 
                         <NavLink to="/noticias" className={clasePC}>
                             Noticias
                         </NavLink> 
 
-                        <NavLink to="/eventos" className={clasePC}>
-                            Nosotros
-                        </NavLink>
-
-                        <NavLink to="/jubilados" className={clasePC}>
+                        <NavLink to="/beneficios" className={clasePC}>
                             Beneficios
                         </NavLink>
 
-                        <NavLink to="/sindicato" className={clasePC}>
+                        <NavLink to="/escala" className={clasePC}>
+                            Escala
+                        </NavLink>
+
+                        <NavLink to="/afiliacion" className={clasePC}>
                             Afiliación
                         </NavLink>
 
-                        <NavLink to="/linksinteres" className={clasePC}>
+                        <NavLink to="/turismo" className={clasePC}>
+                            Turismo
+                        </NavLink>
+
+                        <NavLink to="/camping" className={clasePC}>
+                            Camping
+                        </NavLink>
+
+                        <NavLink to="/documentos" className={clasePC}>
                             Documentos
                         </NavLink>
 
-                        <NavLink to="/zonales" className={clasePC}>
+                        <NavLink to="/contacto" className={clasePC}>
                             Contacto
                         </NavLink>
-
-                        {/* <NavLink to="/obrasocial" className={clasePC}>
-                            Obra Social
-                        </NavLink> */}
 
                         {/* Botón Lista 1 destacado al final (Amarillo con letras negras) */}
                         {/* <Link 
@@ -119,46 +129,3 @@ const clasePC = "px-4 py-2 rounded-xl border border-transparent transition-all d
 }
 
 export default BarraNavegacion;
-
-
-// //IMPORT
-// import { Link } from "react-router-dom";
-// //FUNCION
-// function BarraNavegacion() {
-//     return (
-//         // <header className="bg-gradient-to-r from-orange-50 to-orange-500/65 shadow-sm flex justify-end pr-5 pt-2 pb-2">
-//         <header className="bg-gradient-to-r from-orange-50 to-orange-500/65 shadow-sm flex flex-col sm:flex-row sm:justify-end sm:items-center pr-5 pt-2 pb-2">
-
-//             {/* MENU */}
-//             {/* <nav className="flex space-x-6 text-gray-950 text-xl font-semibold"> */}
-//             <nav className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-950 text-lg sm:text-xl font-semibold">
-//                 <a href="/" className="">Inicio</a>
-
-//                 {/* novedades lo cambiamos por propuestas */}
-//                 <a href="/propuestas" className="">Propuestas</a> 
-
-//                 <a href="/eventos" className="">Eventos</a>
-//                 <a href="/jubilados" className="">Jubilados</a>
-//                 {/* <a href="/enconstruccion" className="">En Actividad</a> */}
-//                 <a href="/sindicato" className="">Sindicato</a>
-
-//                 {/* <a href="/galeria" className="">Galería</a> */}
-//                 <a href="/zonales" className="">Zonales</a>
-                
-//                 <a href="/lista" className="">Lista 1</a>
-
-//                 <a href="/obrasocial" className="">Obra Social</a>
-//                 {/* <a href="#" className="hover:text-blue-600">Galería</a> */}
-
-//                 {/* <Link to="/">Inicio</Link>
-//                 <Link to="/novedades">Novedades</Link>
-//                 <Link to="/eventos">Eventos</Link>
-//                 <Link to="/efemerides">Efemerides</Link> */}
-
-//             </nav>
-//         </header>
-//     )
-// }
-
-// //EXPORTS
-// export default BarraNavegacion

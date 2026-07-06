@@ -11,7 +11,7 @@ function ProximosEventos() {
 
                     <div>
                         {/* <h2 class="text-black text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none"> */}
-                        <h2 class="flex justify-center items-center text-center text-amber-400 [text-stroke:1px_red] [-webkit-text:stroke:1px_black] text-5xl sm:text-6xl md:text-7xl font-extrabold leading-none h-32">
+                        <h2 class="flex justify-center items-center text-center text-black text-5xl sm:text-6xl md:text-7xl font-extrabold leading-none h-32">
                             Eventos
                         </h2>
                     </div>
