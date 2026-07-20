@@ -1,34 +1,32 @@
 import React from "react";
 // Cambiamos Link por NavLink para poder usar estados activos dinámicos
-import { NavLink, Link } from "react-router-dom"; 
+import { NavLink, Link } from "react-router-dom";
 
 function BarraNavegacion() {
 
-const claseCelular = ({ isActive }) => 
-    `py-1.5 px-2 rounded-lg border text-center block w-full transition-all duration-200 font-bold ${
-        isActive 
-            ? "!bg-yellow-500 !text-black !border-yellow-500 shadow-md" 
-            : "!bg-transparent !text-yellow-500 !border-transparent hover:!bg-yellow-500 hover:!text-black hover:!border-yellow-500"
-    }`;
+    const claseCelular = ({ isActive }) =>
+        `py-1.5 px-2 rounded-lg border text-center block w-full transition-all duration-200 font-bold ${isActive
+            ? "!bg-yellow-400 !text-black !border-yellow-400 shadow-md"
+            : "!bg-transparent !text-yellow-500 !border-transparent hover:!text-yellow-400 hover:shadow-[0_0_12px_4px_rgba(234,179,8,0.6)] transition-shadow duration-300 hover:!border-yellow-500"
+        }`;
 
-const clasePC = ({ isActive }) => 
-    `px-4 py-2 rounded-xl border text-base font-bold transition-all duration-200 ${
-        isActive 
-            ? "!bg-yellow-500 !text-black !border-yellow-500 shadow-md" 
-            : "!bg-transparent !text-yellow-500 !border-transparent hover:!bg-yellow-500 hover:!text-black hover:!border-yellow-500"
-    }`;
+    const clasePC = ({ isActive }) =>
+        `px-4 py-2 rounded-xl border text-base font-bold transition-all duration-200 ${isActive
+            ? "!bg-yellow-400 !text-black !border-yellow-400 shadow-md"
+            : "!bg-transparent !text-yellow-400 !border-transparent hover:shadow-[0_0_12px_4px_rgba(234,179,8,0.6)] transition-shadow duration-300 hover:!text-yellow-400 hover:!border-yellow-500"
+        }`;
 
     return (
         <header className="bg-black sticky top-0 z-50 border-b border-neutral-800 transition-all">
-            
+
             {/* =========================================================================
                 1. VISTA PARA CELULARES (Grid en 2 filas fijas sobre fondo negro)
                ========================================================================= */}
             <div className="block md:hidden">
                 {/* LOGO Y TEXTO COMPACTO */}
-                <div className="px-4 pt-3 pb-2 border-b border-neutral-900 flex items-center justify-center gap-3">
+                {/* <div className="px-4 pt-3 pb-2 border-b border-neutral-900 flex items-center justify-center gap-3">
                     <img 
-                        src="/imagenes/logo.png" 
+                        src="/img/logo.png" 
                         alt="Logo SOEVER" 
                         className="w-12 h-12 object-contain flex-shrink-0"
                     />
@@ -40,14 +38,14 @@ const clasePC = ({ isActive }) =>
                             Sindicato Empleados Viales de Entre Ríos
                         </p>
                     </div>
-                </div>
+                </div> */}
 
                 {/* MENÚ EN DOS FILAS EXACTAS CON DETECCIÓN ACTIVA */}
-                <div className="bg-black px-2 py-2">
+                <div className="bg-black px-2.5 py-2.5 pb-4">
                     <nav className="grid grid-cols-4 gap-1 text-center text-xs font-bold">
                         <NavLink to="/" className={claseCelular}>Inicio</NavLink>
                         <NavLink to="/nosotros" className={claseCelular}>Nosotros</NavLink>  {/* ya esta */}
-                        <NavLink to="/noticias" className={claseCelular}>Noticias</NavLink>  {/* ya esta */}  
+                        <NavLink to="/noticias" className={claseCelular}>Noticias</NavLink>  {/* ya esta */}
                         <NavLink to="/beneficios" className={claseCelular}>Beneficios</NavLink>  {/* ya esta */}
                         <NavLink to="/escala" className={claseCelular}>Escala</NavLink>
                         <NavLink to="/afiliacion" className={claseCelular}>Afiliación</NavLink>
@@ -56,7 +54,7 @@ const clasePC = ({ isActive }) =>
                         <NavLink to="/documentos" className={claseCelular}>Documentos</NavLink>
                         <NavLink to="/contacto" className={claseCelular}>Contacto</NavLink>
                     </nav>
-                    
+
                     {/* Botón Lista 1 centrado abajo en el celu */}
                     {/* <div className="flex justify-center mt-2 px-2">
                         <Link to="/lista" className="w-full text-center bg-yellow-500 text-black py-1.5 rounded-lg font-black text-xs uppercase tracking-wider shadow-sm active:bg-yellow-600">
@@ -69,8 +67,13 @@ const clasePC = ({ isActive }) =>
             {/* =========================================================================
                 2. VISTA PARA COMPUTADORAS (Enlaces dinámicos alineados estilo oscuro)
                ========================================================================= */}
-            <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 py-2.5">
-                <div className="flex justify-center items-center">
+            <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 py-3 pb-4">
+                <div className="flex justify-center items-center gap-4">
+                    {/* <img 
+                        src="/img/logo.png" 
+                        alt="Logo SOEVER" 
+                        className="w-12 h-12 object-contain flex-shrink-0"
+                    /> */}
                     <nav className="flex flex-wrap justify-center items-center gap-x-1 gap-y-2 text-base font-bold">
                         <NavLink to="/" className={clasePC}>
                             Inicio
@@ -82,7 +85,7 @@ const clasePC = ({ isActive }) =>
 
                         <NavLink to="/noticias" className={clasePC}>
                             Noticias
-                        </NavLink> 
+                        </NavLink>
 
                         <NavLink to="/beneficios" className={clasePC}>
                             Beneficios
@@ -122,8 +125,15 @@ const clasePC = ({ isActive }) =>
 
                     </nav>
                 </div>
+
             </div>
 
+            <div
+                className="h-2 w-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)]"
+                style={{
+                    backgroundImage: 'repeating-linear-gradient(-45deg, #facc15, #facc15 8px, #000000 8px, #000000 16px)'
+                }}
+            />
         </header>
     );
 }

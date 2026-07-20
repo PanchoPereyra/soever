@@ -30,7 +30,7 @@ function Imagenes2() {
                 <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
                     <h2 className="text-3xl font-bold text-gray-800">Galería: Día del Trabajador</h2>
                     
-                    <Link to="/" className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded shadow transition">
+                    <Link to="/" className="bg-yellow-400 hover:bg-yellow-300 text-white px-5 py-2 rounded shadow transition">
                         ← Volver
                     </Link>
                 </div>

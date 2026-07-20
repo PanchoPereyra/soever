@@ -6,7 +6,7 @@ function Contacto() {
             {/* <p className="text-gray-500 text-sm mb-2">15 de Marzo, 2024</p> */}
 
             {/* Título */}
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-500 mb-6">
                 CONTACTO
             </h1>
 
@@ -18,34 +18,34 @@ function Contacto() {
             /> */}
 
             {/* Contenido */}
-            <div className="text-gray-700 leading-relaxed space-y-4 text-lg">
+            <div className="text-gray-500 leading-relaxed space-y-4 text-lg">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ex blanditiis harum veritatis, ratione illo voluptates, 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ex blanditiis harum veritatis, ratione illo voluptates,
                     debitis earum aspernatur eveniet beatae incidunt.
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis tempora sed magnam, sint eligendi velit. Ab vitae rerum similique placeat deserunt necessitatibus dolore hic magni, perspiciatis nihil veritatis mollitia in.
                 </p>
 
                 <p>
-                    Sequi distinctio obcaecati, quis fuga, aspernatur numquam 
-                    tempora voluptas tenetur cum, blanditiis libero? Rerum 
+                    Sequi distinctio obcaecati, quis fuga, aspernatur numquam
+                    tempora voluptas tenetur cum, blanditiis libero? Rerum
                     quibusdam iure ea? Suscipit illum repellendus doloribus earum.
                 </p>
 
                 <p>
-                    Este acuerdo representa un paso fundamental para garantizar 
+                    Este acuerdo representa un paso fundamental para garantizar
                     mejores condiciones laborales y mayor estabilidad económica.
                 </p>
             </div>
 
             {/* Botón volver */}
             <div className="mt-10">
- <a 
-                href="/"
-                className="px-6 py-2 bg-yellow-500 text-black rounded-lg shadow hover:bg-black hover:text-yellow-300 border border-amber-500 transition"
-            >
-                Volver al inicio
-            </a>
+                <a
+                    href="/"
+                    className="px-6 py-2 bg-yellow-400 text-black rounded-lg shadow hover:bg-black hover:text-yellow-300 border border-amber-500 transition"
+                >
+                    Volver al inicio
+                </a>
             </div>
         </div>
     );

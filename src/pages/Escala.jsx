@@ -25,23 +25,15 @@ export default function Escalas() {
     { titulo: "Acuerdo Salarial – Julio 2023", link: "#" },
     { titulo: "Acuerdo Salarial – Enero 2023", link: "#" },
     { titulo: "Acuerdo Salarial – Abril 2022", link: "#" },
-    { titulo: "Acuerdo Salarial – Mayo 2021", link: "#" },
-    { titulo: "Acuerdo Salarial – Abril 2021", link: "#" },
-    { titulo: "Escala General – Marzo 2021", link: "#" },
-    { titulo: "Escala General – Enero 2019", link: "#" },
-    { titulo: "Escala General – Noviembre 2018", link: "#" },
-    { titulo: "Escala General – Octubre 2018", link: "#" },
-    { titulo: "Escala General – Agosto 2018", link: "#" },
-    { titulo: "Acuerdo Julio 2018 Rama General", link: "#" },
   ];
 
   return (
-    <section className="bg-black py-12 min-h-screen text-white">
+    <section className="bg-black py-12 min-h-screen text-gray-500">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Título de la sección */}
         <div className="border-b border-neutral-800 pb-6 mb-8">
-          <h1 className="text-3xl md:text-4xl font-black text-yellow-500 uppercase tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-black text-yellow-400 uppercase tracking-tight">
             Escalas Salariales
           </h1>
           <p className="text-sm text-neutral-400 mt-2">
@@ -58,8 +50,8 @@ export default function Escalas() {
             >
               {/* Texto e Icono izquierdo */}
               <div className="flex items-center gap-3">
-                <Calendar className="w-5 h-5 text-yellow-500/70 shrink-0 hidden sm:block" />
-                <span className="text-sm md:text-base font-bold text-neutral-200 leading-tight">
+                <Calendar className="w-5 h-5 text-yellow-400 shrink-0 hidden sm:block" />
+                <span className="text-sm md:text-base font-bold text-gray-400 leading-tight">
                   {doc.titulo}
                 </span>
               </div>
@@ -67,7 +59,7 @@ export default function Escalas() {
               {/* Botón Descargar (Cambia a amarillo sólido al hover, estilo vial) */}
               <a 
                 href={doc.link}
-                className="flex items-center gap-2 px-4 py-2 border border-yellow-500 text-yellow-500 rounded-lg text-xs font-black uppercase tracking-wider transition-all duration-200 hover:bg-yellow-500 hover:text-black shrink-0 w-full sm:w-auto justify-center"
+                className="flex items-center gap-2 px-4 py-2 border border-yellow-400 text-yellow-400 rounded-lg text-xs font-black uppercase tracking-wider transition-all duration-200 hover:bg-yellow-500 hover:text-black shrink-0 w-full sm:w-auto justify-center"
               >
                 <FileDown className="w-4 h-4" />
                 Descargar

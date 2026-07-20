@@ -6,7 +6,7 @@ function Nosotros() {
             {/* <p className="text-gray-500 text-sm mb-2">15 de Marzo, 2024</p> */}
 
             {/* Título */}
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-500 mb-6">
                 NOSOTROS
             </h1>
 
@@ -18,7 +18,7 @@ function Nosotros() {
             /> */}
 
             {/* Contenido */}
-            <div className="text-gray-700 leading-relaxed space-y-4 text-lg">
+            <div className="text-gray-500 leading-relaxed space-y-4 text-lg">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Ex blanditiis harum veritatis, ratione illo voluptates, 
@@ -33,8 +33,9 @@ function Nosotros() {
                 </p>
 
                 <p>
-                    Este acuerdo representa un paso fundamental para garantizar 
-                    mejores condiciones laborales y mayor estabilidad económica.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ex blanditiis harum veritatis, ratione illo voluptates, 
+                    debitis earum aspernatur eveniet beatae incidunt.
                 </p>
             </div>
 
@@ -42,7 +43,7 @@ function Nosotros() {
             <div className="mt-10">
  <a 
                 href="/"
-                className="px-6 py-2 bg-yellow-500 text-black rounded-lg shadow hover:bg-black hover:text-yellow-300 border border-amber-500 transition"
+                className="px-6 py-2 bg-yellow-400 text-black rounded-lg shadow hover:bg-black hover:text-yellow-300 border border-yellow-300 transition"
             >
                 Volver al inicio
             </a>

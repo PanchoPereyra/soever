@@ -60,10 +60,10 @@ function LinksInteres() {
                     {links.map((item) => (
                         <div
                             key={item.id}
-                            className="bg-white rounded-2xl border-2 border-transparent hover:border-[#E65C23] shadow-md p-6 flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1"
+                            className="bg-white rounded-2xl border-2 border-transparent hover:bg-yellow-300 shadow-md p-6 flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1"
                         >
                             <div>
-                                <span className="inline-block bg-orange-50 text-[#E65C23] text-xs font-black uppercase tracking-wider px-2.5 py-1 rounded-md mb-3">
+                                <span className="inline-block bg-orange-50 text-yellow-300 text-xs font-black uppercase tracking-wider px-2.5 py-1 rounded-md mb-3">
                                     {item.fecha}
                                 </span>
 
@@ -85,7 +85,7 @@ function LinksInteres() {
                                         {/* Usamos directamente la propiedad src en la etiqueta padre para evitar bloqueos de carga */}
                                         <audio
                                             src={item.audioUrl}
-                                            className="w-full h-10 accent-[#E65C23]"
+                                            className="w-full h-10 accent-yellow-300"
                                             controls
                                             preload="auto"
                                         >
@@ -110,7 +110,7 @@ function LinksInteres() {
                                             else if (videoComponent.webkitRequestFullscreen) videoComponent.webkitRequestFullscreen();
                                         }
                                     }}
-                                    className="w-full text-center px-4 py-2.5 bg-gray-950 text-white font-bold text-sm rounded-xl border border-gray-800 hover:bg-[#E65C23] hover:border-[#E65C23] transition-all duration-200 uppercase tracking-wide shadow-sm"
+                                    className="w-full text-center px-4 py-2.5 bg-gray-950 text-white font-bold text-sm rounded-xl border border-gray-800 hover:yellow-300 hover:border-yellow-300 transition-all duration-200 uppercase tracking-wide shadow-sm"
                                 >
                                     {item.textoBoton}
                                 </button>
@@ -127,7 +127,7 @@ function LinksInteres() {
                                             }
                                         }
                                     }}
-                                    className="w-full text-center px-4 py-2.5 bg-gray-950 text-white font-bold text-sm rounded-xl border border-gray-800 hover:bg-[#E65C23] hover:border-[#E65C23] transition-all duration-200 uppercase tracking-wide shadow-sm"
+                                    className="w-full text-center px-4 py-2.5 bg-gray-950 text-white font-bold text-sm rounded-xl border border-gray-800 hover:bg-yellow-300 hover:border-yellow-300 transition-all duration-200 uppercase tracking-wide shadow-sm"
                                 >
                                     {item.textoBoton}
                                 </button>
@@ -136,7 +136,7 @@ function LinksInteres() {
                                     href={item.url || "#!"}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-full text-center px-4 py-2.5 bg-gray-950 text-white font-bold text-sm rounded-xl border border-gray-800 hover:bg-[#E65C23] hover:border-[#E65C23] transition-all duration-200 uppercase tracking-wide shadow-sm"
+                                    className="w-full text-center px-4 py-2.5 bg-gray-950 text-white font-bold text-sm rounded-xl border border-gray-800 hover:bg-yellow-300 hover:border-yellow-300 transition-all duration-200 uppercase tracking-wide shadow-sm"
                                 >
                                     {item.textoBoton}
                                 </a>
@@ -145,7 +145,7 @@ function LinksInteres() {
                     ))}
                 </div>
 
-                <Link to="/" className="mt-16 px-8 py-2.5 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition">
+                <Link to="/" className="mt-16 px-8 py-2.5 bg-yellow-400 text-white rounded-lg shadow hover:bg-yellow-300 transition">
                     Volver al inicio
                 </Link>
             </div>

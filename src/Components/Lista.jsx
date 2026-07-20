@@ -2,7 +2,7 @@
 
 function Lista() {
     return (
-        <section className="py-12 md:py-20 bg-yellow-500">
+        <section className="py-12 md:py-20 bg-yellow-400">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black text-center">
                     NOSOTROS

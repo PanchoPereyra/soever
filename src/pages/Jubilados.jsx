@@ -9,7 +9,7 @@ function Jubilados() {
             <div className="bg-white w-full max-w-5xl rounded-[30px] shadow-xl overflow-hidden border border-gray-200 p-2 pb-8">
 
                 {/* Cabecera Naranja */}
-                <div className="bg-[#E65C23] text-white text-center py-5 rounded-t-[22px] rounded-b-[12px] mb-6 px-4">
+                <div className="bg-yellow-400 text-white text-center py-5 rounded-t-[22px] rounded-b-[12px] mb-6 px-4">
                     <h1 className="text-3xl md:text-5xl font-black tracking-wide uppercase">
                         Queridos Jubilados y Jubiladas
                     </h1>
@@ -23,7 +23,7 @@ function Jubilados() {
                         
                         {/* Sección 1 */}
                         <div>
-                            <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base mb-2 text-left">
+                            <div className="inline-block bg-yellow-400 px-2 py-0.5 font-bold text-base mb-2 text-left">
                                 ¿Problemas con la obra social o la Caja?
                             </div>
                             <p>
@@ -33,7 +33,7 @@ function Jubilados() {
 
                         {/* Sección 2 */}
                         <div>
-                            <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base mb-2 text-left">
+                            <div className="inline-block bg-yellow-400 px-2 py-0.5 font-bold text-base mb-2 text-left">
                                 ¡Viales de pura cepa!
                             </div>
                             <p>
@@ -43,7 +43,7 @@ function Jubilados() {
 
                         {/* Sección 3 */}
                         <div>
-                            <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base mb-2 text-left">
+                            <div className="inline-block bg-yellow-400 px-2 py-0.5 font-bold text-base mb-2 text-left">
                                 ¡Tu jubilación no se toca!
                             </div>
                             <p>
@@ -53,7 +53,7 @@ function Jubilados() {
 
                         {/* Sección 4 */}
                         <div>
-                            <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base mb-2 text-left">
+                            <div className="inline-block bg-yellow-400 px-2 py-0.5 font-bold text-base mb-2 text-left">
                                 ¡A disfrutar se ha dicho!
                             </div>
                             <p>
@@ -68,7 +68,7 @@ function Jubilados() {
 
                         {/* Sección 5 */}
                         <div>
-                            <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base mb-2 text-left">
+                            <div className="inline-block bg-yellow-400 px-2 py-0.5 font-bold text-base mb-2 text-left">
                                 ¡Tu propia Subsecretaría!
                             </div>
                             <p>
@@ -78,7 +78,7 @@ function Jubilados() {
 
                         {/* Sección 6 */}
                         <div>
-                            <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base mb-2 text-left">
+                            <div className="inline-block bg-yellow-400 px-2 py-0.5 font-bold text-base mb-2 text-left">
                                 ¡Ponemos la sede en condiciones!
                             </div>
                             <p>
@@ -88,7 +88,7 @@ function Jubilados() {
 
                         {/* Sección 7 */}
                         <div>
-                            <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base mb-2 text-left">
+                            <div className="inline-block bg-yellow-400 px-2 py-0.5 font-bold text-base mb-2 text-left">
                                 ¡Celebración de tu día!
                             </div>
                             <p>
@@ -98,7 +98,7 @@ function Jubilados() {
 
                         {/* Sección 8 */}
                         <div>
-                            <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base mb-2 text-left">
+                            <div className="inline-block bg-yellow-400 px-2 py-0.5 font-bold text-base mb-2 text-left">
                                 ¡Tu experiencia vale!
                             </div>
                             <p>

@@ -3,7 +3,7 @@ function EnConstruccion() {
         <div className="flex flex-col items-center justify-center text-center h-[80vh] px-4">
 
             {/* Icono */}
-            <div className="bg-yellow-500 mb-4">
+            <div className="bg-yellow-400 text-black mb-4">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -21,12 +21,12 @@ function EnConstruccion() {
             </div>
 
             {/* Título */}
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-500 mb-4">
                 Página en construcción
             </h1>
 
             {/* Mensaje */}
-            <p className="text-gray-600 max-w-md mb-8 text-lg">
+            <p className="text-gray-500 max-w-md mb-8 text-lg">
                 Estamos trabajando para traerte esta sección muy pronto.  
                 ¡Gracias por tu paciencia!
             </p>
@@ -34,7 +34,7 @@ function EnConstruccion() {
             {/* Botón */}
  <a 
                 href="/"
-                className="px-6 py-2 bg-yellow-500 text-black rounded-lg shadow hover:bg-black hover:text-yellow-300 border border-amber-500 transition"
+                className="px-6 py-2 bg-yellow-400 text-black rounded-lg shadow hover:bg-black hover:text-yellow-300 border border-amber-500 transition"
             >
                 Volver al inicio
             </a>

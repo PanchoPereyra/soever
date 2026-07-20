@@ -37,7 +37,7 @@ function Novedades() {
                     <div class="gap-5 grid grid-cols-1 md:grid-cols-4">
 
                         {/* TARJETA 1 */}
-                        <div class="bg-orange-600/65 p-6 rounded-lg shadow-md text-left">
+                        <div class="bg-yellow-400 p-6 rounded-lg shadow-md text-left">
                             <div class="flex items-center justify-between mb-4">
                                 {/* <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Negociación</span> */}
                                 <span class="text-sm text-white">1 de Enero, 2024</span>
@@ -48,18 +48,18 @@ function Novedades() {
                         </div>
 
                         {/* TARJETA 2 */}
-                        <div class="bg-[#E65C23] p-6 rounded-lg shadow-md text-left">
+                        <div class="bg-yellow-400 p-6 rounded-lg shadow-md text-left">
                             <div class="flex items-center justify-between mb-4">
                                 <span class="text-sm text-white">2 de Enero, 2024</span>
                             </div>
                             <h3 class="text-lg font-bold mb-2 text-white">Prueba novedad dos 2024</h3>
                             <p class="text-white mb-4">Se ha alcanzado un acuerdo histórico que beneficia a todos los trabajadores del sector.</p>
                             {/* <a href="#" class="text-yellow-300 hover:underline text-sm font-medium ">Leer más →</a> */}
-                            <a href="/noticia2" class="text-yellow-300 hover:underline text-sm font-medium ">Leer más →</a>
+                            <a href="/noticia2" class="text-yellow-400 hover:underline text-sm font-medium ">Leer más →</a>
                         </div>
 
                         {/* TARJETA 3 */}
-                        <div class="bg-[#E65C23] p-6 rounded-lg shadow-md text-left">
+                        <div class="bg-yellow-400 p-6 rounded-lg shadow-md text-left">
                             <div class="flex items-center justify-between mb-4">
                                 {/* <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Negociación</span> */}
                                 <span class="text-sm text-white">3 de Enero, 2024</span>
@@ -67,18 +67,18 @@ function Novedades() {
                             <h3 class="text-lg font-bold mb-2 text-white">Prueba novedad tres 2024</h3>
                             <p class="text-white mb-4">Se ha alcanzado un acuerdo histórico que beneficia a todos los trabajadores del sector.</p>
                             {/* <a href="#" class="text-yellow-300 hover:underline text-sm font-medium ">Leer más →</a> */}
-                            <a href="/noticia3" class="text-yellow-300 hover:underline text-sm font-medium ">Leer más →</a>
+                            <a href="/noticia3" class="text-yellow-400 hover:underline text-sm font-medium ">Leer más →</a>
                         </div>
 
                         {/* TARJETA 4 */}
-                        <div class="bg-orange-600/65 p-6 rounded-lg shadow-md text-left">
+                        <div class="bg-yellow-400 p-6 rounded-lg shadow-md text-left">
                             <div class="flex items-center justify-between mb-4">
                                 <span class="text-sm text-white">4 de Enero, 2024</span>
                             </div>
                             <h3 class="text-lg font-bold mb-2 text-white">Prueba novedad cuatro 2024</h3>
                             <p class="text-white mb-4">Se ha alcanzado un acuerdo histórico que beneficia a todos los trabajadores del sector.</p>
                             {/* <a href="#" class="text-yellow-300 hover:underline text-sm font-medium ">Leer más →</a> */}
-                            <a href="/noticia4" class="text-yellow-300 hover:underline text-sm font-medium ">Leer más →</a>
+                            <a href="/noticia4" class="text-yellow-400 hover:underline text-sm font-medium ">Leer más →</a>
                         </div>
                     </div>
 

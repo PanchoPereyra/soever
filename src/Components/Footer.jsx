@@ -7,65 +7,27 @@ function Footer() {
     // <footer >
     //   <div class="bg-orange-600/65">
     //     <div class="max-w-6xl mx-auto px-6 gap-8 flex justify-evenly">
-    <footer class=" text-white">
+    <footer class="bg-yellow-400 text-white">
       {/* SEPARADOR VIAL ANGOSTO Y ESTILIZADO */}
-      <div
-        className="h-3 w-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)]"
+      {/* <div
+        className="h-2 w-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)]"
         style={{
           backgroundImage: 'repeating-linear-gradient(-45deg, #facc15, #facc15 8px, #000000 8px, #000000 16px)'
         }}
-      />
+      /> */}
       <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
 
-        {/*COLUMNA 1 - DESCRIPCION */}
-        {/* <div class="w-1/2 text-center">
-            <h2 class="text-lg font-semibold mb-2">Unión y Renovación</h2>
-            <div>
-              <p class="text-sm">
-                Unidos por la defensa de los derechos laborales y el bienestar de todos los trabajadores.
-                Juntos construimos un futuro más justo.
-              </p>
-            </div>
-          </div> */}
+
         <div class="text-center md:text-left md:w-1/2">
-          <h2 class="text-xl font-semibold mb-3 text-yellow-500">S.O.E.V.E.R.</h2>
-          <p class="text-sm leading-relaxed text-gray-500">
+          <h2 class="text-xl font-semibold mb-3 text-black">S.O.E.V.E.R.</h2>
+          <p class="text-sm leading-relaxed text-gray-800">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere explicabo est rerum nemo animi. Delectus dolores quaerat incidunt dolorum nostrum excepturi quasi quis sed, facere voluptatibus praesentium porro voluptatum iste.
           </p>
         </div>
 
-        {/* COLUMNA 3 - REDES SOCIALES */}
-        {/* <div class="w-1/2">
-            <h2 className="text-lg font-semibold mb-2 text-center">Seguinos</h2>
-            <div className="flex space-x-4 justify-center items-center">
-              <div>
-                <p>Facebook</p>
-              </div>
-              <div>
-                <p>Instagram</p>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/* RESPONSIVE */}
-        {/* <div class="text-center md:w-1/2">
-          <h2 class="text-xl font-semibold mb-3">Seguinos</h2>
-          <div class="flex justify-center md:justify-end gap-6">
-            
-            {/* Facebook */}
-        {/* <a href="#" class="hover:text-yellow-300 transition-colors">
-              <img src="imagenes/facebook.png" alt="" />
-            </a> */}
-
-        {/* Instagram */}
-        {/* <a href="#" class="hover:text-yellow-300 transition-colors">
-              <img src="imagenes/instagram.png" alt="" />
-            </a> */}
-        {/* </div> */}
-        {/* </div> */}
 
         <div className="text-center md:w-1/2 flex flex-col items-center md:items-end">
-          <h2 className="text-xl font-semibold mb-3 text-yellow-500">Seguinos</h2>
+          <h2 className="text-xl font-semibold mb-3 text-black">Seguinos</h2>
 
           {/* FACEBOOK */}
           <div className="flex justify-center md:justify-end gap-4">
@@ -96,15 +58,22 @@ function Footer() {
           © 2025 Todos los derechos reservados.
         </div> */}
       {/* <hr class="border-gray-950 mx-6" />
+
       {/* SEPARADOR ESTILO CARTEL DE OBRA / CINTA DE PELIGRO */}
-      <div
+      {/* <div
         className="h-6 w-full shadow-[inset_0_4px_6px_rgba(0,0,0,0.6),0_4px_6px_rgba(0,0,0,0.6)]"
         style={{
           backgroundImage: 'repeating-linear-gradient(-45deg, #facc15, #facc15 15px, #000000 15px, #000000 30px)'
         }}
-      />
+      /> */}
+      {/* <div
+        className="h-2 w-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)]"
+        style={{
+          backgroundImage: 'repeating-linear-gradient(-45deg, #facc15, #facc15 8px, #000000 8px, #000000 16px)'
+        }}
+      /> */}
 
-      <div class="text-center text-xs py-4 text-yellow-500">
+      <div class="bg-black text-center text-xs py-4 text-yellow-400">
         © 2025 Todos los derechos reservados.
       </div>
 

@@ -83,7 +83,7 @@ function ObraSocial() {
             {/* Contenedor principal estilo tarjeta/folleto */}
             <div className="bg-white w-full max-w-lg rounded-[30px] shadow-xl overflow-hidden border border-gray-200 p-2 pb-6">
 
-                <div className="bg-[#E65C23] text-white text-center py-4 rounded-t-[22px] rounded-b-[12px] mb-6">
+                <div className="bg-yellow-400 text-white text-center py-4 rounded-t-[22px] rounded-b-[12px] mb-6">
                     <h1 className="text-4xl md:text-5xl font-black tracking-wide">
                         OSPA
                     </h1>
@@ -101,7 +101,7 @@ function ObraSocial() {
                 </p>
 
                 {/* Cabecera Naranja */}
-                <div className="bg-[#E65C23] text-white text-center py-4 rounded-t-[22px] rounded-b-[12px] mb-6">
+                <div className="bg-yellow-400 text-white text-center py-4 rounded-t-[22px] rounded-b-[12px] mb-6">
                     <h1 className="text-4xl md:text-5xl font-black tracking-wide">
                         PROPUESTA OBRA SOCIAL
                     </h1>
@@ -120,7 +120,7 @@ function ObraSocial() {
                     </ul>
 
                     {/* Texto resaltado en amarillo */}
-                    <div className="inline-block bg-[#FFF200] px-2 py-0.5 font-bold text-base my-2">
+                    <div className="inline-block bg-yellow-400 px-2 py-0.5 font-bold text-base my-2">
                         La salud es un derecho.
                     </div>
 
@@ -193,7 +193,7 @@ function ObraSocial() {
             {/* Botón de "Volver al inicio" abajo de la tarjeta */}
             <a
                 href="/"
-                className="mt-8 px-8 py-2.5 bg-[#E65C23] text-white rounded-lg shadow hover:bg-orange-600 transition"
+                className="mt-8 px-8 py-2.5 bg-yellow-400 text-white rounded-lg shadow hover:bg-yellow-300 transition"
             >
                 Volver al inicio
             </a>

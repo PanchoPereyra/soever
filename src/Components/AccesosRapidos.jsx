@@ -13,8 +13,8 @@ import {
 
 export default function AccesosRapidos() {
   // Ajustamos el borde amarillo sutil por defecto (border-yellow-500/30) para calcar tu foto
-  const tarjetaEstilo = "group flex flex-col items-center justify-center text-center p-6 rounded-xl border border-yellow-500/30 bg-neutral-950/40 transition-all duration-200 hover:bg-yellow-500 hover:border-yellow-500 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(250,204,21,0.15)]";
-  const iconoEstilo = "w-10 h-10 text-yellow-500 group-hover:text-black transition-colors duration-200 shrink-0";
+  const tarjetaEstilo = "group flex flex-col items-center justify-center text-center p-6 rounded-xl border border-yellow-400 bg-neutral-950/40 transition-all duration-200 hover:bg-yellow-500 hover:border-yellow-500 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(250,204,21,0.15)]";
+  const iconoEstilo = "w-10 h-10 text-yellow-400 group-hover:text-black transition-colors duration-200 shrink-0";
   const textoEstilo = "mt-4 text-xs font-black uppercase tracking-wider text-gray-500 group-hover:text-black transition-colors duration-200 leading-tight";
 
   return (
@@ -22,7 +22,7 @@ export default function AccesosRapidos() {
       <div className="max-w-5xl mx-auto">
         
         {/* Título de la sección en Amarillo Vial */}
-        <h2 className="text-2xl md:text-3xl font-black text-yellow-500 uppercase tracking-tight mb-10 text-center md:text-left">
+        <h2 className="text-2xl md:text-3xl font-black text-yellow-400 uppercase tracking-tight mb-10 text-center md:text-left">
           ACCESOS RÁPIDOS
         </h2>
 

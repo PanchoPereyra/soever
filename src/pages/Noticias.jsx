@@ -16,13 +16,13 @@ function Noticias() {
                 <div className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
                     
                     {/* TARJETA 1 */}
-                    <div className="bg-yellow-500 rounded-lg shadow-md text-left overflow-hidden flex flex-col justify-between">
+                    <div className="bg-yellow-400 rounded-lg shadow-md text-left overflow-hidden flex flex-col justify-between">
                         <div>
                             {/* 📸 IMAGEN DE LA TARJETA */}
                             <img 
                                 src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=500" 
                                 alt="Acuerdo Salarial" 
-                                className="w-full h-40 object-cover"
+                                className="w-[96%] mx-auto h-40 object-cover border border-yellow-500 rounded-lg mt-1"
                             />
                             {/* CONTENIDO CON EL ESPACIADO INTERNO */}
                             <div className="p-5">
@@ -39,12 +39,12 @@ function Noticias() {
                     </div>
 
                     {/* TARJETA 2 */}
-                    <div className="bg-yellow-500 rounded-lg shadow-md text-left overflow-hidden flex flex-col justify-between">
+                    <div className="bg-yellow-400 rounded-lg shadow-md text-left overflow-hidden flex flex-col justify-between">
                         <div>
                             <img 
                                 src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=500" 
                                 alt="Acuerdo Salarial" 
-                                className="w-full h-40 object-cover"
+                                className="w-[96%] mx-auto h-40 object-cover border border-yellow-500 rounded-lg mt-1"
                             />
                             <div className="p-5">
                                 <div className="flex items-center justify-between mb-2">
@@ -60,12 +60,12 @@ function Noticias() {
                     </div>
 
                     {/* TARJETA 3 */}
-                    <div className="bg-yellow-500 rounded-lg shadow-md text-left overflow-hidden flex flex-col justify-between">
+                    <div className="bg-yellow-400 rounded-lg shadow-md text-left overflow-hidden flex flex-col justify-between">
                         <div>
                             <img 
                                 src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=500" 
                                 alt="Acuerdo Salarial" 
-                                className="w-full h-40 object-cover"
+                                className="w-[96%] mx-auto h-40 object-cover border border-yellow-500 rounded-lg mt-1"
                             />
                             <div className="p-5">
                                 <div className="flex items-center justify-between mb-2">
@@ -81,12 +81,12 @@ function Noticias() {
                     </div>
 
                     {/* TARJETA 4 */}
-                    <div className="bg-yellow-500 rounded-lg shadow-md text-left overflow-hidden flex flex-col justify-between">
+                    <div className="bg-yellow-400 rounded-lg shadow-md text-left overflow-hidden flex flex-col justify-between">
                         <div>
                             <img 
                                 src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=500" 
                                 alt="Acuerdo Salarial" 
-                                className="w-full h-40 object-cover"
+                                className="w-[96%] mx-auto h-40 object-cover border border-yellow-500 rounded-lg mt-1"
                             />
                             <div className="p-5">
                                 <div className="flex items-center justify-between mb-2">

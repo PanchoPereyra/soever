@@ -16,7 +16,7 @@ function Beneficios() {
                 <div class="gap-5 grid grid-cols-1 md:grid-cols-4">
                     
                     {/* TARJETA 1 */}
-                    <div class="bg-yellow-500 p-6 rounded-lg shadow-md text-left">
+                    <div class="bg-yellow-400 p-6 rounded-lg shadow-md text-left">
                         <div class="flex items-center justify-between mb-4">
                             {/* <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Negociación</span> */}
                             <span class="text-sm text-black">15 de Marzo, 2024</span>
@@ -27,7 +27,7 @@ function Beneficios() {
                     </div>
 
                     {/* TARJETA 2 */}
-                    <div class="bg-yellow-500 p-6 rounded-lg shadow-md text-left">
+                    <div class="bg-yellow-400 p-6 rounded-lg shadow-md text-left">
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-sm text-black">15 de Marzo, 2024</span>
                         </div>
@@ -37,7 +37,7 @@ function Beneficios() {
                     </div>
 
                     {/* TARJETA 3 */}
-                    <div class="bg-yellow-500 p-6 rounded-lg shadow-md text-left">
+                    <div class="bg-yellow-400 p-6 rounded-lg shadow-md text-left">
                         <div class="flex items-center justify-between mb-4">
                             {/* <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Negociación</span> */}
                             <span class="text-sm text-black">15 de Marzo, 2024</span>
@@ -48,7 +48,7 @@ function Beneficios() {
                     </div>
 
                     {/* TARJETA 4 */}
-                    <div class="bg-yellow-500 p-6 rounded-lg shadow-md text-left">
+                    <div class="bg-yellow-400 p-6 rounded-lg shadow-md text-left">
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-sm text-black">15 de Marzo, 2024</span>
                         </div>
@@ -62,7 +62,7 @@ function Beneficios() {
                 <div className="mt-10">
  <a 
                 href="/"
-                className="px-6 py-2 bg-yellow-500 text-black rounded-lg shadow hover:bg-black hover:text-yellow-300 border border-amber-500 transition"
+                className="px-6 py-2 bg-yellow-400 text-black rounded-lg shadow hover:bg-black hover:text-yellow-300 border border-amber-500 transition"
             >
                 Volver al inicio
             </a>
