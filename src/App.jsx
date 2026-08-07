@@ -28,6 +28,7 @@ import Turismo from "./pages/Turismo";
 import Documentos from "./pages/EnConstruccion";
 import Contacto from "./pages/Contacto";
 import Camping from "./pages/Camping";
+import FatVial from "./pages/FatVial";
 //********************************************************** */
 // Hasta aca
 
@@ -58,15 +59,11 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="camping" element={<Camping />} />
         <Route path="/lista" element={<Lista />} />
-        <Route path="/noticias" element={<Noticias/>}/>    
+        <Route path="/noticias" element={<Noticias/>}/>
+        <Route path="/fat" element={<FatVial/>}/>    
         <Route path="*" element={<NotFound />} />
       </Routes>
 
-      {/* <Hero /> */}
-      {/* <Eslogan /> */}
-      {/* <Novedades /> */}
-      {/* <Efemerides /> */}
-      {/* <Galeria/> */}
       
       <AccesosRapidos/>
       <Footer />

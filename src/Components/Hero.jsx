@@ -1,20 +1,38 @@
 import React, { useState, useEffect } from 'react';
 
+const slides = [
+    '/img/placeholder1.jpg',
+    '/img/placeholder2.jpg',
+    '/img/placeholder3.jpg',
+];
+
 function Hero() {
+    const [current, setCurrent] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrent((prev) => (prev + 1) % slides.length);
+        }, 4000);
+        return () => clearInterval(timer);
+    }, []);
 
     return (
         /* Contenedor principal con relative y overflow-hidden */
         <section className="relative b py-6 md:py-12 min-h-[70vh] flex items-center overflow-hidden">
 
-            {/* ================= MARCA DE AGUA EN TODO EL ANCHO DE LA SECCIÓN ================= */}
-            {/* Usamos opacity-25 directo en el contenedor y object-cover para que tape todo el fondo sin deformarse */}
-            {/* <div className="absolute inset-0 pointer-events-none select-none opacity-28 z-0">
-                <img
-                    src="/imagenes-propuesta/fondo5.jpeg"
-                    alt="Marca de agua Fondo Completo"
-                    className="w-full h-full object-cover"
-                />
-            </div> */}
+            {/* ================= CARRUSEL DE MARCA DE AGUA ================= */}
+            <div className="absolute inset-0 pointer-events-none select-none z-0">
+                {slides.map((src, i) => (
+                    <img
+                        key={i}
+                        src={src}
+                        alt=""
+                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${
+                            i === current ? 'opacity-[0.18]' : 'opacity-0'
+                        }`}
+                    />
+                ))}
+            </div>
 
             
             {/* CONTENEDOR CON Z-10 PARA QUEDAR POR ENCIMA DE LA MARCA DE AGUA */}

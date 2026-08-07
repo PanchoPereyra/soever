@@ -83,6 +83,12 @@ export default function AccesosRapidos() {
             <span className={textoEstilo}>Contacto</span>
           </a>
 
+          {/* Tarjeta 10: FatVial */}
+          <a href="/fat" className={tarjetaEstilo}>
+            <Phone className={iconoEstilo} strokeWidth={1.5} />
+            <span className={textoEstilo}>FatVial</span>
+          </a>
+
         </div>
 
       </div>
